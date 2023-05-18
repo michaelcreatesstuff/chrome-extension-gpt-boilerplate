@@ -49,11 +49,23 @@ button {
 
 button:hover {
   background-color: #45a049;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#buttonContainer {
+  display: flex;
 }
 
 #saveApiKey {
   margin-top: 10px;
+}
+
+#mainContent {
+  padding: 10px;
 }
 
 /* Container for the input field and button */
@@ -64,7 +76,12 @@ button:hover {
   width: 100%;
 }
 
-.spinner {
+#spinnerContainer {
+  position: relative;
+}
+
+#spinner {
+  position: absolute;
   margin: 10px;
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-left-color: #000;
