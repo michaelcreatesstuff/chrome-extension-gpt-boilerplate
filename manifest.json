@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "OpenAI Summarizer",
+  "name": "SummaryGPT",
   "version": "1.0",
   "description": "Summarize webpages using OpenAI's API",
   "permissions": ["activeTab", "tabs", "storage", "scripting"],
