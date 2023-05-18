@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "OpenAI Summarizer",
+  "version": "1.0",
+  "description": "Summarize webpages using OpenAI's API",
+  "permissions": ["activeTab", "tabs", "storage", "scripting"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Summarize Page"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html"
+  }
+}
